@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var pantalla = document.querySelector('canvas');
+        var pincel = pantalla.getContext('2d');
+
+        pincel.fillStyle = 'grey';
+        pincel.fillRect(0, 0, 600, 400);
+
+        var puedoDibujar = false;
+        let colorPincel = ""
+
+        function dibujarCirculo(evento) {
+
+
+
+
+            if (puedoDibujar) {
+                var x = evento.pageX - pantalla.offsetLeft;
+                var y = evento.pageY - pantalla.offsetTop;
+                pincel.fillStyle = colorPincel;
+                pincel.beginPath();
+                pincel.arc(x, y, 5, 0, 2 * 3.14);
+                pincel.fill();
+            }
+
+        }
+
+        pantalla.onmousemove = dibujarCirculo;
+
+        function habilitarDibujar() {
+
+            puedoDibujar = true;
+        }
+
+        function deshabilitarDibujar() {
+
+            puedoDibujar = false;
+        }
+
+        pantalla.onmousedown = habilitarDibujar;
+
+        pantalla.onmouseup = deshabilitarDibujar;
+
+        function dibujarCuadrados(x, color) {
+            pincel.fillStyle = color;
+            pincel.fillRect(x, 0, 30, 30);
+            pincel.fill();
+        }
+
+        dibujarCuadrados(0, "orange");
+        dibujarCuadrados(30, "yellow");
+        dibujarCuadrados(60, "red");
+
+        function selectColor(evento) {
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+            if (y > 0 && y < 30) {
+                if (x > 0 && x < 30) {
+                    colorPincel = "orange";
+                }
+                if (x > 30 && x < 60) {
+                    colorPincel = "yellow";
+                }
+                if (x > 60 && x < 90) {
+                    colorPincel = "red";
+                }
+
+            }
+        }
+
+        pantalla.onclick = selectColor;
+
+    </script>
+</body>
+
+</html>
