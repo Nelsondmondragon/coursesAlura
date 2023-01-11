@@ -100,3 +100,68 @@ footer {
     color: #ffffff;
     margin: 20px;
 }
+
+.main-contact {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-patron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    /* transition: 1s background; */
+    cursor: pointer;
+}
+
+.enviar:hover{
+    transition: 1s;
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+
+table{
+    margin: 40px 40px;
+
+}
+
+thead{
+
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid black ;
+    padding: 8px 15px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="box-nav">
+            <h1><img src="../images/logo.png" alt="Logo de la barberia Nelson"></h1>
+            <nav>
+                <ul>
+                    <li> <a href="../html&CssPart1/index.html">Home</a> </li>
+                    <li> <a href="../htmlCssPart2/productos.html">Products</a> </li>
+                    <li><a href="./contacto.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main-contact">
+        <form action="">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-patron" required>
+
+
+            <label for="correoelectronico">Correo electronico</label>
+            <input type="email" id="correoelectronico" class="input-patron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-patron" required placeholder="(XX) XXXX XXXX">
+
+            <label for="mensaje">Mnesaje</label>
+            <textarea id="mensaje" cols="70" rows="10" class="input-patron" required></textarea>
+
+            <fieldset>
+
+                <legend>&iquest Como le gustaria que lo contactemos</legend>
+
+                <label for="radio-email"> <input type="radio" name="contacto" value="email" id="radio-email">
+                    Email</label>
+
+
+                <label for="radio-telefono"><input type="radio" value="telefono" name="contacto" id="radio-telefono">
+                    telefono</label>
+
+                <label for="radio-whatsApp"><input type="radio" value="telefono" name="contacto" id="radio-whatsApp"
+                        checked>WahtsApp</label>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>&iquest En cual horario prefiere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Mannana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+
+            </fieldset>
+
+            <label class="checkbox" for=""> <input type="checkbox" checked>Le gustaria recibir novedades de la barberia
+                Nelson?</label>
+
+
+            <input class="enviar" type="submit" value="Enviar formulario">
+        </form>
+
+        <table>
+            <thead>
+                <th>Dias</th>
+                <th>Horario</th>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        Lunes
+                    </td>
+                    <td>
+                        08h ~ 20h
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Miercoles
+                    </td>
+                    <td>
+                        08h ~ 20h
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Viernes
+                    </td>
+                    <td>
+                        08h ~ 20h
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+
+    <footer>
+        <img src="../images/logo-blanco.png" alt="Logo de la barberia Nelson">
+        <p class="copyright">&copy Copyright Barberia Nelson 2023</p>
+    </footer>
+</body>
+
+</html>
