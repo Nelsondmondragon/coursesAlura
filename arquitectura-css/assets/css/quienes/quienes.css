@@ -1,0 +1,172 @@
+.quienes {
+  padding: 1rem;
+  text-align: center;
+}
+.quienes__titulo {
+  font-family: Pacifico, cursive;
+  color: #da2b1f;
+  font-weight: 400;
+  font-size: 3.8rem;
+}
+
+.quienes__descripcion {
+  color: #595959;
+  font-size: 1.3rem;
+}
+
+.personas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 3rem; */
+}
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.persona__imagen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.persona__imagen--roberta {
+  background-image: url("../../img/personas/roberta.jpg");
+}
+
+.persona__imagen--marcela {
+  background-image: url("../../img/personas/marcela.jpg");
+}
+.persona__imagen--andreia {
+  background-image: url("../../img/personas/andrea.jpg");
+}
+
+.persona__nombre {
+  font-family: Pacifico, cursive;
+  color: #da2b1f;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.persona__funcion {
+  color: #a39f9f;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+}
+
+@media screen and (min-width: 40em) {
+  .quienes {
+    padding: 5rem;
+    text-align: center;
+  }
+  .quienes__titulo {
+    font-family: Pacifico, cursive;
+    color: #da2b1f;
+    font-weight: 400;
+    font-size: 3.8rem;
+  }
+
+  .quienes__descripcion {
+    color: #595959;
+    font-size: 1.3rem;
+  }
+
+  .personas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  .persona {
+    display: flex;
+    flex-direction: column;
+    width: calc(25%);
+  }
+
+  .persona__imagen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+
+  .persona__imagen--roberta {
+    background-image: url("../../img/personas/roberta.jpg");
+  }
+
+  .persona__imagen--marcela {
+    background-image: url("../../img/personas/marcela.jpg");
+  }
+  .persona__imagen--andreia {
+    background-image: url("../../img/personas/andrea.jpg");
+  }
+
+  .persona__nombre {
+    font-family: Pacifico, cursive;
+    color: #da2b1f;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .persona__funcion {
+    color: #a39f9f;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+  }
+  .quienes {
+    padding: 5rem;
+    text-align: center;
+  }
+  .quienes__titulo {
+    font-family: Pacifico, cursive;
+    color: #da2b1f;
+    font-weight: 400;
+    font-size: 3.8rem;
+  }
+
+  .quienes__descripcion {
+    color: #595959;
+    font-size: 1.3rem;
+  }
+
+  .personas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  .persona {
+    display: flex;
+    flex-direction: column;
+    width: calc(25%);
+  }
+
+  .persona__imagen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+}
+
+/* @media screen and (min-width: 64em) {
+  .products--grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+  }
+} */
