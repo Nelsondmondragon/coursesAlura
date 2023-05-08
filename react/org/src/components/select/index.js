@@ -1,16 +1,6 @@
 import "./Select.css";
 
 const Select = (props) => {
-  const equipos = [
-    "Programación",
-    "Front End",
-    "Data Science",
-    "Devops",
-    "UX y Diseño",
-    "Móvil",
-    "Innovación y Gestión",
-  ];
-
   const setValue = (event) => {
     const equi = event.target.value;
     props.setValor(equi);
@@ -23,7 +13,7 @@ const Select = (props) => {
         <option value="" disabled defaultValue="" hidden>
           Seleccionar equipo
         </option>
-        {equipos.map((item, index) => (
+        {props.equipos.map((item, index) => (
           <option value={item} key={index}>
             {item}
           </option>
