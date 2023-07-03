@@ -18,3 +18,12 @@ Cursos realizados:
 - Javascript: primeros pasos con el lenguaje.
 - Js en la web: Manipulacion del DOM.
 - JS en la web: Validacion de formularios y html5.
+- JS: Introducción a la Orientación a Objetos.
+- JS: Herencia e Interfaces en Orientación a Objetos.
+- JS en la Web: CRUD con JavaScript asíncrono.
+- React: desarrollando con JavaScript.
+- React: como los componentes funcionan.
+- React Router: Navegación en una SPA.
+- React: Utilizando Styled Components.
+- React: Hooks, contextos y buenas prácticas.
+- React: Function Components.
